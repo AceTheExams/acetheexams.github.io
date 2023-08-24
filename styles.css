@@ -13,7 +13,7 @@ body{
   
   font-family:'REM';
 }
-p,H1,h2,h3,h4,h5,h6{
+p,H1,h2,h3,h4,h5,h6,footer{
   color: white;
 }
 ul {
@@ -66,5 +66,21 @@ li a:hover:not(.active) {
   border-radius:7px;
 }
 iframe {
-  background-color:#ededed00;
+
+}
+.folders {
+  overflow-y: hidden;
+  max-width: 780px;
+}
+
+.folder {
+ 
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 5em;
+}
+.folder_main {
+  overflow-y: hidden;
+  max-width: 800px;
 }
