@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaveTheExams - Home</title>
+  <link rel="stylesheet" href="styles.css">
+<script src="index.js"></script>
+  
+</head>
+ 
+<body onload="load()">
+  <div class="nav">
+<br>
+    <div id="logo" class="">
+      <img src="webfil/ste.png" height="55px" onclick="hidenavbar()">
+    </div>
+    <hr width="60px">
+    <div class="tooltip"onclick="chemcl()" style="background-color: #1690ee;"id="chem">
+      <span class="tooltiptext">Chemistry</span>
+     <img src="webfil/sub-ico/flask.png" height="40">
+    </div>
+    <div class="tooltip" onclick="bicl()" style="background-color: #006548;" id="bio">
+      <span class="tooltiptext">Biology</span>
+       <img src="webfil/sub-ico/leaf.png" height="40">
+   </div>
+    <div class="tooltip" onclick="phycl()" style="background-color: #ffba49;" id="phy">
+      <span class="tooltiptext">Physics</span>
+       <img src="webfil/sub-ico/magnet.png" height="40">
+    </div>
+    <div class="tooltip" onclick="mexcl()" style="background-color: #ed4851;"id="mathex">
+      <span class="tooltiptext">Extended Mathematics</span>
+       <img src="webfil/sub-ico/calculator.png" height="40">
+    </div>
+    <div class="tooltip" onclick="cscl()"id="cs">
+      <span class="tooltiptext">Computer<br> Science</span>
+       <img src="webfil/sub-ico/laptop.png" height="40">
+    </div>
+    <div class="tooltip" onclick="tbcl()" style="background-color: #990066;"id="tb">
+      <span class="tooltiptext">TextBooks</span>
+       <img src="webfil/sub-ico/book.png" height="40">
+    </div>
+</div>
+  <iframe src="resources/home.html" id='load'height="99%" width="86%"  frameBorder="0"></iframe>
+</body>
+</html>
