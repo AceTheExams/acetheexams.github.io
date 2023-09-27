@@ -18,7 +18,6 @@ p{
 .folders {
   overflow-y: hidden;
     margin: 5em;
-  float: left;
   max-width: 780px;
 }
 
