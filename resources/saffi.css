@@ -28,3 +28,13 @@ p{
   margin: 5em;
   cursor:pointer;
 }
+.btn {
+    display: inline-block;
+    background-color: #2d60d7;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.3s ease;
+  border-radius:7px;
+}
