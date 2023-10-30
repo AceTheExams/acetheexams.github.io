@@ -36,7 +36,7 @@ if (localStorage.getItem("biol") === null) {
 
 
 function tbcl(){
-  document.getElementById('load').src = "https://app.box.com/embed/s/0gio9nnvnse4kvwm4iikdaipvg9l4p8y?sortColumn=name";
+  document.getElementById('load').src = "https://drive.google.com/embeddedfolderview?id=1k7o4XsEFYeJEnF9u_XKoebkGd4eqObDh#grid";
 }
 function chemcl(){
   document.getElementById('load').src = "/resources/chemistry.html";
