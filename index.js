@@ -53,3 +53,10 @@ function mexcl(){
 function bicl(){
   document.getElementById('load').src = "/resources/biology.html";
 }
+function Giauth(){
+  var vercode = prompt("School Abbreviated Name in Caps")
+  if (vercode=="GIIS"){
+    document.getElementById('load').src = "/resources/GIIS.html";
+  }
+    
+  }
