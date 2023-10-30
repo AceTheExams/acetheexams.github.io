@@ -56,7 +56,7 @@ function bicl(){
 function Giauth(){
   var vercode = prompt("School Abbreviated Name in Caps")
   if (vercode=="GIIS"){
-    document.getElementById('load').src = "/resources/GIIS.html";
+    document.getElementById('load').src = "https://drive.google.com/embeddedfolderview?id=1pzAgePa2g4MjMEhgXcJfdODNBGLL5BSw#grid";
   }
     
   }
