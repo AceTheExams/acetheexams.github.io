@@ -1,8 +1,10 @@
 function load(){
-  if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  if (document.URL != "https://eshangonemad.store/mobile.html"){
+
+if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 window.location.assign("mobile.html");console.log('checkcom')
     
-}else{
+}}else{
      document.getElementById("cs").style.display = "none";document.getElementById("mathex").style.display = "none";document.getElementById("bio").style.display = "none";document.getElementById("chem").style.display = "none";document.getElementById("phy").style.display = "none";
 
 if (localStorage.getItem("biol") === null) {
