@@ -31,9 +31,9 @@ body{
   <script>function load(){
 
      document.getElementById("cs").style.display = "none";document.getElementById("mathex").style.display = "none";document.getElementById("bio").style.display = "none";document.getElementById("chem").style.display = "none";document.getElementById("phy").style.display = "none";
-alert('jaakas')
+
 if (localStorage.getItem("biol") === null) {
-  window.location.assign("/start/start.html");
+  window.location.assign("/start/startmobile.html");
 } else {
   // Parse the values from localStorage as integers
   var chemi = parseInt(localStorage.getItem("chemi"));
