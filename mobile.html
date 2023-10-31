@@ -29,7 +29,7 @@ body{
 
   </style>
   <script>function load(){
-alert('h')
+console.log('load function loads')
      document.getElementById("cs").style.display = "none";document.getElementById("mathex").style.display = "none";document.getElementById("bio").style.display = "none";document.getElementById("chem").style.display = "none";document.getElementById("phy").style.display = "none";
 
 if (localStorage.getItem("biol") === null) {
@@ -81,8 +81,8 @@ function bicl(){
   document.getElementById('load').src = "/resources/biology.html";
 }
 function Giauth(){
-  var vercode = prompt("School Abbreviated Name in Caps")
-  if (vercode=="GIIS"){
+  var vercode = prompt("School Abbreviated Name")
+  if (vercode.toLowerCase()=="giis"){
     document.getElementById('load').src = "https://drive.google.com/embeddedfolderview?id=1pzAgePa2g4MjMEhgXcJfdODNBGLL5BSw#grid";
   }else{
     alert('School Not In Database')
