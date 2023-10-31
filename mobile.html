@@ -1,46 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3477476880696582"
-     crossorigin="anonymous"></script>
 
-     <link rel="manifest" href="/manifest.json">
-<meta name="title" content="SaveTheExams - Best Resources" />
-<meta name="description" content="Welcome to SaveTheExams, the home of best resources to help you on your IGCSE learning Journey" />
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "iui1btnhnj");
-</script>
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "iui36t18u3");
-</script>
-    
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://eshangonemad.github.io" />
-<meta property="og:title" content="SaveTheExams - Best Resources" />
-<meta property="og:description" content="Welcome to SaveTheExams, the home of best resources to help you on your IGCSE learning Journey" />
-<meta property="og:image" content="/webfil/ste.png" />
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://eshangonemad.github.io" />
-<meta property="twitter:title" content="SaveTheExams - Best Resources" />
-<meta property="twitter:description" content="Welcome to SaveTheExams, the home of best resources to help you on your IGCSE learning Journey" />
-<meta property="twitter:image" content="/webfil/ste.png" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SaveTheExams - Home</title>
   <link rel="stylesheet" href="styles.css">
-
+<script src="mobile.js"></script>
   <style>
 body{
   overflow:hidden;
@@ -53,7 +20,7 @@ body{
       height:100px;
       display: flex;
       overflow-x: auto;
-     align-items: center
+      align-items: center
     }
 
     .nav img {
@@ -62,79 +29,18 @@ body{
 
   </style>
 </head>
-  <script>function load(){
- 
-     document.getElementById("cs").style.display = "none";document.getElementById("mathex").style.display = "none";document.getElementById("bio").style.display = "none";document.getElementById("chem").style.display = "none";document.getElementById("phy").style.display = "none";
 
-if (localStorage.getItem("biol") === null) {
-  window.location.assign("/start/start.html");
-} else {
-  // Parse the values from localStorage as integers
-  var chemi = parseInt(localStorage.getItem("chemi"));
-  var biol = parseInt(localStorage.getItem("biol"));
-  var mathext = parseInt(localStorage.getItem("mathext"));
-  var phys = parseInt(localStorage.getItem("phys"));
-  var cos = parseInt(localStorage.getItem("cos"));
-  // Check the values and set the display style accordingly
-  if (chemi === 1) {
-    document.getElementById("chem").style.display = "block";
-  }
-  if (biol === 1) {
-    document.getElementById("bio").style.display = "block";
-  }
-  if (mathext === 1) {
-    document.getElementById("mathex").style.display = "block";
-  }
-  if (phys === 1) {
-    document.getElementById("phy").style.display = "block";
-  }
-  if (cos === 1) {
-    document.getElementById("cs").style.display = "block";
-  }
-}
-}
-}
-
-
-function tbcl(){
-  document.getElementById('load').src = "https://drive.google.com/embeddedfolderview?id=1k7o4XsEFYeJEnF9u_XKoebkGd4eqObDh#grid";
-}
-function chemcl(){
-  document.getElementById('load').src = "/resources/chemistry.html";
-}
-function cscl(){
-  document.getElementById('load').src = "/resources/cs.html";
-}
-function phycl(){
-  document.getElementById('load').src = "/resources/physics.html";
-}
-function mexcl(){
-  document.getElementById('load').src = "/resources/mathex.html";
-}
-function bicl(){
-  document.getElementById('load').src = "/resources/biology.html";
-}
-function Giauth(){
-  var vercode = prompt("School Abbreviated Name in Caps")
-  if (vercode=="GIIS"||vercode=="giis"||vercode=="Giis"){
-    document.getElementById('load').src = "https://drive.google.com/embeddedfolderview?id=1pzAgePa2g4MjMEhgXcJfdODNBGLL5BSw#grid";
-  }else{
-    alert('School Not In Database')
-  }
-    
-  }</script>
-<body onload="load()">
-
+<body>
     <div class="nav" style="overflow-x:scroll">
-       <img src="/webfil/ste.png" onclick="Giauth()" id="bio"width="60" height="60">
-      <img src="/webfil/START/BIO.png" id="bio" onclick="bicl()" id="bio"width="60"height="60">
-       <img src="/webfil/START/CHEM.png" onclick="chemcl()" id="chem"width="60"height="60"> 
-      <img src="/webfil/START/PHY.png" onclick="phycl()" id="phy"width="60"height="60">
-       <img src="/webfil/START/MATH.png" onclick="mexcl()" id="mathex" width="60"height="60">
-       <img src="/webfil/START/CS.png" onclick="cscl()" id="cs"width="60"height="60">
-      <img src="/webfil/START/TB.png" onclick="tbcl()" id="tb" width="60px"height="60">
-       
-      
+       <img src="/webfil/ste.png" onclick="Giauth()" id="bio"width="90">
+      <img src="/webfil/START/BIO.png" id="bio" onclick="bicl()" id="bio"width="90">
+       <img src="/webfil/START/CHEM.png" onclick="chemcl()" id="chem"width="90"> 
+      <img src="/webfil/START/PHY.png" onclick="phycl()" id="phy"width="90">
+       <img src="/webfil/START/MATH.png" onclick="mexcl()" id="mathex" width="90">
+       <img src="/webfil/START/CS.png" onclick="cscl()" id="cs"width="90">
+      <img src="/webfil/START/TB.png" onclick="tbcl()" id="tb"width="90">
+
+
   </div>
    <iframe src="resources/home.html" id='load'height="90%" width="99%"  frameBorder="1"></iframe>
 </body>
