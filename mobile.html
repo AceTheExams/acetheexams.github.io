@@ -71,6 +71,67 @@ body{
 </head>
  
 <body onload="load()">
+ <script>function load(){
+ 
+     document.getElementById("cs").style.display = "none";document.getElementById("mathex").style.display = "none";document.getElementById("bio").style.display = "none";document.getElementById("chem").style.display = "none";document.getElementById("phy").style.display = "none";
+
+if (localStorage.getItem("biol") === null) {
+  window.location.assign("/start/start.html");
+} else {
+  // Parse the values from localStorage as integers
+  var chemi = parseInt(localStorage.getItem("chemi"));
+  var biol = parseInt(localStorage.getItem("biol"));
+  var mathext = parseInt(localStorage.getItem("mathext"));
+  var phys = parseInt(localStorage.getItem("phys"));
+  var cos = parseInt(localStorage.getItem("cos"));
+  // Check the values and set the display style accordingly
+  if (chemi === 1) {
+    document.getElementById("chem").style.display = "block";
+  }
+  if (biol === 1) {
+    document.getElementById("bio").style.display = "block";
+  }
+  if (mathext === 1) {
+    document.getElementById("mathex").style.display = "block";
+  }
+  if (phys === 1) {
+    document.getElementById("phy").style.display = "block";
+  }
+  if (cos === 1) {
+    document.getElementById("cs").style.display = "block";
+  }
+}
+}
+}
+
+
+function tbcl(){
+  document.getElementById('load').src = "https://drive.google.com/embeddedfolderview?id=1k7o4XsEFYeJEnF9u_XKoebkGd4eqObDh#grid";
+}
+function chemcl(){
+  document.getElementById('load').src = "/resources/chemistry.html";
+}
+function cscl(){
+  document.getElementById('load').src = "/resources/cs.html";
+}
+function phycl(){
+  document.getElementById('load').src = "/resources/physics.html";
+}
+function mexcl(){
+  document.getElementById('load').src = "/resources/mathex.html";
+}
+function bicl(){
+  document.getElementById('load').src = "/resources/biology.html";
+}
+function Giauth(){
+  var vercode = prompt("School Abbreviated Name in Caps")
+  if (vercode=="GIIS"||vercode=="giis"||vercode=="Giis"){
+    document.getElementById('load').src = "https://drive.google.com/embeddedfolderview?id=1pzAgePa2g4MjMEhgXcJfdODNBGLL5BSw#grid";
+  }else{
+    alert('School Not In Database')
+  }
+    
+  }</script>
     <div class="nav" style="overflow-x:scroll">
        <img src="/webfil/ste.png" onclick="Giauth()" id="bio"width="60" height="60">
       <img src="/webfil/START/BIO.png" id="bio" onclick="bicl()" id="bio"width="60"height="60">
