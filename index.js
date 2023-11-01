@@ -56,11 +56,6 @@ function bicl(){
   document.getElementById('load').src = "/resources/biology.html";
 }
 function Giauth(){
-  var vercode = prompt("School Abbreviated Name in Caps")
-  if (vercode=="GIIS"){
-    document.getElementById('load').src = "https://drive.google.com/embeddedfolderview?id=1pzAgePa2g4MjMEhgXcJfdODNBGLL5BSw#grid";
-  }else{
-    alert('School Not In Database')
+   document.getElementById('load').src = "/resources/home.html";
   }
-    
-  }
+  
