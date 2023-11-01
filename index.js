@@ -58,4 +58,10 @@ function bicl(){
 function Giauth(){
    document.getElementById('load').src = "/resources/home.html";
   }
+function TooCalc(){
+  let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
+width=500,height=700,left=500,top=500`;//data to open no menu login
+
+open('https://eshangonemad.github.io/calculator', 'test', params);//opens up a no menu version of login
+}
   
