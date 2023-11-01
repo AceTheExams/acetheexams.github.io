@@ -1,7 +1,8 @@
+
 {
-  "name": "SaveTheExams",
-  "short_name": "SaveTheExams",
+  "theme_color":"#1c2333",
   "author": "SaveTheExams",
+  "background_color":"#1c2333",
   "icons": [
    
     {
@@ -10,8 +11,12 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/index.html",
-  "display": "standalone",
-  "theme_color": "#0e1525",
-  "background_color": "#0e1525"
+  "orientation":"any",
+  "display":"standalone",
+  "dir":"auto",
+  "lang":"en-US",
+  "short_name":"SaveTheExams",
+  "name":"SaveTheExams",
+  "start_url":"./index.html",
+  "description":"SaveTheExams",
 }
