@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="saffi.css">
   <title>SaveTheExams - TextBooks</title>
+  <script>function Giauth(){
+  var vercode = getElementById('bttn').innerHTML
+  if (vercode=="GIIS"){
+      location.herf("https://drive.google.com/embeddedfolderview?id=1pzAgePa2g4MjMEhgXcJfdODNBGLL5BSw#grid");
+  }else{
+    alert('School Not In Database')
+  }
+    </script>
 </head>
 <body>
   <center>
@@ -13,7 +21,7 @@
      <p>The Hub for Notes, TextBooks & More!</p>
     <hr>
 <input type="text" style="text-align: center;border-radius:6px;height:20px"placeholder="School Abbreviated Name">
-    <button class="btn" style="height:10px;text-align: center;">Search</button>
+    <button id="bttn"class="btn" style="height:10px;text-align: center;">Search</button>
   
   </center>
 </body>
