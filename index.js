@@ -1,6 +1,6 @@
 function TooCalc(){
   let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
-width=330,height=500,left=350,top=400`;//data to open no menu login
+width=300,height=500,left=350,top=400`;//data to open no menu login
 
 open('https://eshangonemad.github.io/calculator', 'test', params);//opens up a no menu version of login
 }
