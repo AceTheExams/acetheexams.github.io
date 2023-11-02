@@ -6,7 +6,7 @@
     "short_name": "SaveTheExams",
     "name": "SaveTheExams",
     "description": "SaveTheExams",
-    "author": "SaveTheExams Team",
+    "id": "SaveTheExams Team",
     "icons": [
         {
             "src": "icon-192x192.png",
