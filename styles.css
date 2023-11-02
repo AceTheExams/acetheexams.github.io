@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SaveTheExams - Blastoff</title>
-  <style>@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=REM:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=REM:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
 
 html,
 body {
-  height: 100%;
+  height: 99%;
   font-family: 'Google Sans', sans-serif;
   color: white;
 }
@@ -21,37 +14,83 @@ body {
   margin: 0;
   background: #0e1525;
 }
-p,H1,h2,h3,h4,h5,h6,footer{
-  color: white;
-}
-small{
-  color:#878787;
-}
 
-h1{
-  font-family: 'Outfit', sans-serif;
-  font-size: 40px;
+.nav {
+  background: #1c2333;
+  float: left;
+  height: 100%;
+  width: 72px;
 }
-.row {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-} .block {
-  width: 100px;
-  padding: 10px 20px;
-}
-.block img{
+.nav div{
+  background-color: #3881f0;
+  height: 55px;
+  width:55px;
+  border-radius: 7px;
+  margin: 0 auto; 
+  position: relative;
   cursor: pointer;
   
 }
-/*.block :hover{
-  border-radius: 15px;
-  border: 2px solid #ffffff;
-}*/
-.myStyle {
-  border-radius: 15px;
-  border: 6px solid #ffffff;
+hr{
+  border-color: #2a3247;
+  background-color:#2a3247 ;
+  height:3px;
+}
+
+/*
+This is for the tool tips
+*/
+.tooltip {
+  position: relative;
+}
+.tooltip:hover{
+  border: 1px solid #ffffff;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip img{
+ margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding:7px 7px;
+
+}
+p,H1,h2,h3,h4,h5,h6,footer{
+  color: white;
+  font-family: 'Google Sans', sans-serif;
+}
+h1{
+  font-family: "REM";
+}
+
+#chem,#bio,#mathex,#cs,#phy{
+  margin-bottom: 10px; 
 }
 button{
 
@@ -62,31 +101,10 @@ button{
     text-decoration: none;
     border: none;
     transition: background-color 0.3s ease;
-  font-family: 'REM', sans-serif;
   border-radius:7px;
-  font-size:18px;
-  cursor:pointer;
+
 }
-</style>
 
-</head>
-<body>
-  <center>
-  <h1 style="font-size: 40px;">Welcome to SaveTheExams</h1>
-    <p style="font-size: 25px;">Let's Help you get started</p>
-    <p style="font-size: 18px;">Choose Your Subjects</p>
-<div class="row" >
-  <div class="block"><img onclick="ccl()"src="/webfil/START/CHEM.png" height="100" width="100" id="chem"><p>Chemistry</p></div>
- <div class="block"><img onclick="bcl()"src="/webfil/START/BIO.png" height="100" width="100" id="bio"><p>Biology</p></div> 
-  <div class="block"><img onclick="pcl()"src="/webfil/START/PHY.png" height="100" width="100" id="phy"><p>Physics</p></div></div><div class="row">
-  <div class="block"><img onclick="mxcl()"src="/webfil/START/MATH.png" height="100" width="100" id="mathex"><p>Extended<br>Mathematics</p></div>
- <div class="block"><img onclick="cscl()" src="/webfil/START/CS.png" height="100" width="100" id="cs"><p>Computer<br>Science</p></div> 
-</div>
-    <button onclick="validate()">BlastOff!</button>
-<br>
-    <small>By clicking the BlastOff! button you accept your use of data for development and functioning of the site</small>
-
-</body>
-  <script type="text/javascript" src="start.js"></script>
-</html>
-  </center>
+.show{
+ display:block; 
+}
