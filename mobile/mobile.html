@@ -31,6 +31,8 @@ body{
   </style>
   <script>function load(){
 console.log('load function loads')
+ 
+  navigator.setAppBadge(9)
      document.getElementById("cs").style.display = "none";document.getElementById("mathex").style.display = "none";document.getElementById("bio").style.display = "none";document.getElementById("chem").style.display = "none";document.getElementById("phy").style.display = "none";
 
 if (localStorage.getItem("biol") === null) {
