@@ -5,12 +5,12 @@ width=300,height=500,left=350,top=400`;//data to open no menu login
 open('https://eshangonemad.github.io/calculator', 'test', params);//opens up a no menu version of login
 }
 function load(){
-  if (document.URL != "https://eshangonemad.store/mobile/mobile.html"){
-
+  
 if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 window.location.assign("/mobile/mobile.html");console.log('checkcom')
     
-}}else{
+}else{
+  console.log('wurks?')
      document.getElementById("cs").style.display = "none";document.getElementById("mathex").style.display = "none";document.getElementById("bio").style.display = "none";document.getElementById("chem").style.display = "none";document.getElementById("phy").style.display = "none";
 
 if (localStorage.getItem("biol") === null) {
