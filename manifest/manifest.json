@@ -3,10 +3,9 @@
     "background_color": "#1c2333",
     "display": "standalone",
     "start_url": "/index.html",
-    "short_name": "SaveTheExams",
-    "name": "SaveTheExams",
-    "description": "SaveTheExams",
-    "id": "SaveTheExams Team",
+    "short_name": "AceTheExams",
+    "name": "AceTheExams",
+    "description": "AceTheExams",
     "icons": [
         {
             "src": "icon-192x192.png",
