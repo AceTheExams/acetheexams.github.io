@@ -38,7 +38,7 @@ p{
     transition: background-color 0.3s ease;
   border-radius:7px;
 }
-p,H1,h2,h3,h4,h5,h6,footer{
+p,H1,h2,h3,h4,h5,h6,footer,input{
   color: white;
   font-family: 'Google Sans', sans-serif;
 }
