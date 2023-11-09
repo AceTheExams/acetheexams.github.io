@@ -38,9 +38,13 @@ p{
     transition: background-color 0.3s ease;
   border-radius:7px;
 }
-p,H1,h2,h3,h4,h5,h6,footer,input{
+p,H1,h2,h3,h4,h5,h6,footer,{
   color: white;
   font-family: 'Google Sans', sans-serif;
+}
+input{
+   color: black;
+   font-family: 'Google Sans', sans-serif;
 }
 
  .roow {
