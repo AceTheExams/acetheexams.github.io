@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+.alert {
+  padding: 20px;
+  background-color: #ffac0a;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
  <meta name="title" content="AceTheExams - Best Resources" />
 <meta name="description" content="Welcome to AceTheExams, the home of best resources to help you on your IGCSE learning Journey" />
 <script type="text/javascript">
@@ -124,6 +146,12 @@ document.getElementById('load').src = "/home/home.html";
 
 
   </div>
+  <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> <center>&nbsp&nbsp
+   <a href="/webfil/diw.png" height="20px" width="20px"> <strong>Happy Diwali!</strong> to all our users </center>
+  
+</div>
+</a>
    <iframe src="/home/home.html" id='load'height="90%" width="99%"  title="AceTheExams Page Viewer"frameBorder="0"></iframe>
 </body>
 </html>
