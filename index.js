@@ -11,7 +11,7 @@ window.location.assign("/mobile/mobile.html");console.log('checkcom')
     
 }else{
   console.log('wurks?')
-     document.getElementById("cs").style.display = "none";document.getElementById("mathex").style.display = "none";document.getElementById("bio").style.display = "none";document.getElementById("chem").style.display = "none";document.getElementById("phy").style.display = "none";
+     document.getElementById("cs").style.display = "none";document.getElementById("mathex").style.display = "none";document.getElementById("bio").style.display = "none";document.getElementById("chem").style.display = "none";document.getElementById("phy").style.display = "none";document.getElementById("evm").style.display = "none";document.getElementById("bstds").style.display = "none";
 
 if (localStorage.getItem("biol") === null) {
   window.location.assign("/start/start.html");
@@ -22,6 +22,8 @@ if (localStorage.getItem("biol") === null) {
   var mathext = parseInt(localStorage.getItem("mathext"));
   var phys = parseInt(localStorage.getItem("phys"));
   var cos = parseInt(localStorage.getItem("cos"));
+  var evos = parseInt(localStorage.getItem("evos"))
+  var bstds = parseInt(localStorage.getItem("bstds"))
   // Check the values and set the display style accordingly
   if (chemi === 1) {
     document.getElementById("chem").style.display = "block";
@@ -37,6 +39,12 @@ if (localStorage.getItem("biol") === null) {
   }
   if (cos === 1) {
     document.getElementById("cs").style.display = "block";
+  }
+   if (evos === 1) {
+    document.getElementById("evm").style.display = "block";
+  }
+   if (bstds === 1) {
+    document.getElementById("bstds").style.display = "block";
   }
 }
 }
@@ -64,4 +72,10 @@ function bicl(){
 function Giauth(){
    document.getElementById('load').src = "/home/home.html";
   }
+function evcl(){
+  document.getElementById('evm').src = "https://drive.google.com/embeddedfolderview?id=________#grid"
+}
+ function bscl(){
+    document.getElementById('bstds').src = "https://drive.google.com/embeddedfolderview?id=________#grid"
+ }
 
