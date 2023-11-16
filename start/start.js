@@ -3,7 +3,8 @@ var biol =0
 var mathext =0
 var phys =0
 var cos =0
-
+//evos = 0
+//bsos = 0
 function ccl(){
   if (chemi==0){
     chemi=1
@@ -54,12 +55,37 @@ function mxcl(){
     document.getElementById("mathex").classList.toggle("myStyle");
   }
 }
+/*
+function evcl(){
+  if (evos==0){
+    evos=1
+    document.getElementById("evm").classList.toggle("myStyle");
 
+  }else if (evos==1){
+    evos=0   
+    document.getElementById("evm").classList.toggle("myStyle");
+  }
+}
+*/
+/*
+function bscl(){
+  if (bsos==0){
+    bsos=1
+    document.getElementById("bstds").classList.toggle("myStyle");
+
+  }else if (bsos==1){
+    bsos=0   
+    document.getElementById("bstds").classList.toggle("myStyle");
+  }
+}
+*/
 function validate(){
   localStorage.setItem("chemi", chemi);
   localStorage.setItem("biol", biol);
   localStorage.setItem("phys", phys);
   localStorage.setItem("mathext",mathext );
   localStorage.setItem("cos", cos);
+  // localStorage.setItem("evos", evos);
+  //localStorage.setItem("bsos", bsos);
   window.location.assign('/index.html')
 }
