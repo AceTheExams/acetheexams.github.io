@@ -66,3 +66,12 @@ function Giauth(){
    document.getElementById('load').src = "/home/home.html";
   }
 
+/*
+function evcl(){
+  document.getElementById('load').src= "https://drive.google.com/embeddedfolderview?id=_____#grid"
+}
+
+function bscl(){
+  document.getElementById('load').src= "https://drive.google.com/embeddedfolderview?id=_____#grid"
+}
+*/
