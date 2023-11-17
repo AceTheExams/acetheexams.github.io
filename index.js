@@ -23,6 +23,9 @@ if (localStorage.getItem("cos") === null) {
   var mathext = parseInt(localStorage.getItem("mathext"));
   var phys = parseInt(localStorage.getItem("phys"));
   var cos = parseInt(localStorage.getItem("cos"));
+  
+  var evos = parseInt(localStorage.getItem("evos"));
+  var bsos = parseInt(localStorage.getItem("bsos"));
   // Check the values and set the display style accordingly
   if (chemi === 1) {
     document.getElementById("chem").style.display = "block";
