@@ -3,8 +3,8 @@ var biol =0
 var mathext =0
 var phys =0
 var cos =0
-evos = 0
-bsos = 0
+var evos = 0
+var bsos = 0
 function ccl(){
   if (chemi==0){
     chemi=1
