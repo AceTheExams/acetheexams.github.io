@@ -14,7 +14,7 @@ window.location.assign("/mobile/mobile.html");console.log('checkcom')
   console.log('wurks?')
      document.getElementById("cs").style.display = "none";document.getElementById("mathex").style.display = "none";document.getElementById("bio").style.display = "none";document.getElementById("chem").style.display = "none";document.getElementById("phy").style.display = "none";document.getElementById("evm").style.display = "none";document.getElementById("bstds").style.display = "none";
 
-if (localStorage.getItem("evos") === null) {
+if (localStorage.getItem("cos") === null) {
   window.location.assign("/start/start.html");
 } else {
   // Parse the values from localStorage as integers
