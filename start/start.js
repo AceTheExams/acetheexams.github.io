@@ -3,8 +3,8 @@ var biol =0
 var mathext =0
 var phys =0
 var cos =0
-//evos = 0
-//bsos = 0
+evos = 0
+bsos = 0
 function ccl(){
   if (chemi==0){
     chemi=1
@@ -55,7 +55,7 @@ function mxcl(){
     document.getElementById("mathex").classList.toggle("myStyle");
   }
 }
-/*
+
 function evcl(){
   if (evos==0){
     evos=1
@@ -66,8 +66,6 @@ function evcl(){
     document.getElementById("evm").classList.toggle("myStyle");
   }
 }
-*/
-/*
 function bscl(){
   if (bsos==0){
     bsos=1
@@ -78,7 +76,7 @@ function bscl(){
     document.getElementById("bstds").classList.toggle("myStyle");
   }
 }
-*/
+
 function validate(){
   localStorage.setItem("chemi", chemi);
   localStorage.setItem("biol", biol);
