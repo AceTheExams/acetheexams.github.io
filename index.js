@@ -66,7 +66,7 @@ function Giauth(){
    document.getElementById('load').src = "/home/home.html";
   }
 
-/*
+
 function evcl(){
   document.getElementById('load').src= "https://drive.google.com/embeddedfolderview?id=1xoUXreOz8RXSkrPvHzNX5hKajZ-G3HSc#grid"
 }
@@ -74,4 +74,4 @@ function evcl(){
 function bscl(){
   document.getElementById('load').src= "https://drive.google.com/embeddedfolderview?id=1Nm4HrAgqKUcm3R9kq_l2P1wca2vEOgwX#grid"
 }
-*/
+
