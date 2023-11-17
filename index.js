@@ -40,10 +40,10 @@ if (localStorage.getItem("cos") === null) {
     document.getElementById("cs").style.display = "block";
   }
   if (bsos === 1) {
-    document.getElementById("cs").style.display = "block";
+    document.getElementById("bstds").style.display = "block";
   }
     if (evos === 1) {
-    document.getElementById("cs").style.display = "block";
+    document.getElementById("evm").style.display = "block";
   }
 }
 }
