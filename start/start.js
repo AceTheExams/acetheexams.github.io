@@ -83,7 +83,7 @@ function validate(){
   localStorage.setItem("phys", phys);
   localStorage.setItem("mathext",mathext );
   localStorage.setItem("cos", cos);
-  // localStorage.setItem("evos", evos);
-  //localStorage.setItem("bsos", bsos);
+   localStorage.setItem("evos", evos);
+  localStorage.setItem("bsos", bsos);
   window.location.assign('/index.html')
 }
