@@ -92,6 +92,8 @@ if (localStorage.getItem("biol") === null) {
   var mathext = parseInt(localStorage.getItem("mathext"));
   var phys = parseInt(localStorage.getItem("phys"));
   var cos = parseInt(localStorage.getItem("cos"));
+  var bsos = parseInt(localStorage.getItem("bsos"));
+  var evos = parseInt(localStorage.getItem("evos"))
   // Check the values and set the display style accordingly
   if (chemi === 1) {
     document.getElementById("chem").style.display = "block";
@@ -107,6 +109,12 @@ if (localStorage.getItem("biol") === null) {
   }
   if (cos === 1) {
     document.getElementById("cs").style.display = "block";
+  }
+  if (evos === 1) {
+    document.getElementById("evm").style.display = "block";
+  }
+  if (bsos === 1) {
+    document.getElementById("bstds").style.display = "block";
   }
 }
 }
