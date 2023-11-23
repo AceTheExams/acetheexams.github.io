@@ -47,6 +47,10 @@ This is for the tool tips
   border: 1px solid #ffffff;
 }
 .tooltip .tooltiptext {
+   width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
   visibility: hidden;
   width: 120px;
   background-color: black;
