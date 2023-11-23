@@ -42,15 +42,11 @@ This is for the tool tips
 */
 .tooltip {
   position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
 }
-.tooltip:hover{
-  border: 1px solid #ffffff;
-}
+
 .tooltip .tooltiptext {
-   width: 120px;
-  top: 100%;
-  left: 50%;
-  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
   visibility: hidden;
   width: 120px;
   background-color: black;
@@ -60,19 +56,22 @@ This is for the tool tips
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  top: -5px;
-  left: 110%;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
 }
+
 .tooltip .tooltiptext::after {
- content: " ";
+  content: "";
   position: absolute;
-  bottom: 100%;  /* At the top of the tooltip */
+  bottom: 100%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent black transparent;
 }
+
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
